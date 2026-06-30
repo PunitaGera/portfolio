@@ -336,6 +336,20 @@ function App() {
 
          <div className="flex gap-4">
 
+  <div className="flex gap-4">
+
+  <button
+    onClick={() =>
+      window.open(
+        "https://punita.pythonanywhere.com",
+        "_blank"
+      )
+    }
+    className="flex-1 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition"
+  >
+    Live Demo
+  </button>
+
   <button
     onClick={() =>
       window.open(
@@ -347,6 +361,8 @@ function App() {
   >
     GitHub
   </button>
+
+</div>
 
 </div>
 
