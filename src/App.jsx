@@ -171,79 +171,60 @@ function App() {
 </section>
 
 <section id="projects" className="py-20 px-6 bg-white">
-
   <div className="max-w-6xl mx-auto">
-
     <div className="text-center mb-12">
+      <p className="text-blue-600 font-semibold uppercase tracking-widest">
+        Portfolio
+      </p>
 
-  <p className="text-blue-600 font-semibold uppercase tracking-widest">
-    Portfolio
-  </p>
+      <h2 className="text-4xl font-bold mt-2">
+        Featured Projects
+      </h2>
 
-  <h2 className="text-4xl font-bold mt-2">
-    Featured Projects
-  </h2>
-
-  <p className="text-gray-500 mt-3">
-    Some of the projects I have built while learning modern web development.
-  </p>
-
-</div>
+      <p className="text-gray-500 mt-3">
+        Some of the projects I have built while learning modern web development.
+      </p>
+    </div>
 
     <div className="grid md:grid-cols-2 gap-8">
-
       {/* Project 1 */}
-
       <div className="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+        <div className="flex justify-between items-center mb-4">
+          <h3 className="text-2xl font-bold">📝 To-Do App</h3>
 
-       <div className="flex justify-between items-center mb-4">
+          <span className="bg-green-500 text-white text-xs px-3 py-1 rounded-full">
+            Completed
+          </span>
+        </div>
 
-  <h3 className="text-2xl font-bold">
-    📝 To-Do App
-  </h3>
+        <p className="text-xs text-gray-500 mb-4">Version 1.0</p>
 
-  <span className="bg-green-500 text-white text-xs px-3 py-1 rounded-full">
-    Completed
-  </span>
-  </div>
-      <p className="text-xs text-gray-500 mt-2">
-      Version 1.0
-    </p>
-
-
-              <img
-        src={todoImg}
-        alt="To-Do App"
-      className="w-full h-64 object-contain rounded-lg shadow-md mb-4 border bg-white"
-      />
+        <img
+          src={todoImg}
+          alt="To-Do App"
+          className="w-full h-64 object-contain rounded-lg shadow-md mb-4 border bg-white"
+        />
 
         <p className="text-gray-700 mb-4">
-  
-  A modern task management application built using React, JavaScript, and Tailwind CSS. It helps users organize daily tasks efficiently with a clean, responsive, and user-friendly interface.
-</p>
+          A modern task management application built using React, JavaScript,
+          and Tailwind CSS. It helps users organize daily tasks efficiently with
+          a clean, responsive, and user-friendly interface.
+        </p>
 
+        <ul className="text-gray-600 text-sm space-y-2 mb-5">
+          <li>✅ Add, edit and delete tasks</li>
+          <li>✅ Search tasks instantly</li>
+          <li>✅ Mark tasks as completed</li>
+          <li>✅ Set due dates and priorities</li>
+          <li>✅ Dark Mode support</li>
+          <li>✅ Local Storage data persistence</li>
+        </ul>
 
-<ul className="text-gray-600 text-sm space-y-2 mb-5">
-
-  <li>✅ Add, edit and delete tasks</li>
-
-  <li>✅ Search tasks instantly</li>
-
-  <li>✅ Mark tasks as completed</li>
-
-  <li>✅ Set due dates and priorities</li>
-
-  <li>✅ Dark Mode support</li>
-
-  <li>✅ Local Storage data persistence</li>
-
-</ul>
         <div className="flex gap-3 mb-5 flex-wrap">
-
           <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">
             React
           </span>
-         
+
           <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">
             JavaScript
           </span>
@@ -255,69 +236,57 @@ function App() {
           <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">
             Local Storage
           </span>
-          
-          
-
         </div>
 
         <div className="flex gap-4">
+          <button
+            onClick={() =>
+              window.open("https://punitagera.github.io/todo-app/", "_blank")
+            }
+            className="flex-1 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition text-center"
+          >
+            Live Demo
+          </button>
 
           <button
-      onClick={() =>
-        window.open(
-          "https://punitagera.github.io/todo-app/",
-          "_blank"
-        )
-      }
-      className="flex-1 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition text-center"
-    >
-      Live Demo
-    </button>
-
-          <button
-  onClick={() =>
-    window.open(
-      "https://github.com/PunitaGera/todo-app",
-      "_blank"
-    )
-  }
-  className="flex-1 border border-blue-600 text-blue-600 px-5 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition text-center"
->
-  GitHub
-</button>
+            onClick={() =>
+              window.open("https://github.com/PunitaGera/todo-app", "_blank")
+            }
+            className="flex-1 border border-blue-600 text-blue-600 px-5 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition text-center"
+          >
+            GitHub
+          </button>
         </div>
-
       </div>
 
       {/* Project 2 */}
-
       <div className="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
-
         <div className="flex justify-between items-center mb-4">
+          <h3 className="text-2xl font-bold">
+            🛡️ Online Complaint Management System
+          </h3>
 
-  <h3 className="text-2xl font-bold">
-    🛡️ Online Complaint Management System
-  </h3>
-
-  <span className="bg-green-500 text-white text-xs px-3 py-1 rounded-full">
-    Completed
-  </span>
-
-</div>
+          <span className="bg-green-500 text-white text-xs px-3 py-1 rounded-full">
+            Completed
+          </span>
+        </div>
 
         <img
-      src={ocmsImg}
-      alt="Online Complaint Management System"
-      className="w-full h-56 object-cover rounded-lg shadow-md mb-4 border"
-    />
+          src={ocmsImg}
+          alt="Online Complaint Management System"
+          className="w-full h-56 object-contain rounded-lg shadow-md mb-4 border bg-white"
+        />
 
         <p className="text-gray-700 mb-5">
-          A full-stack complaint management system developed using Python, Django, SQLite, HTML, CSS, and JavaScript. The application enables users to register and track complaints while allowing administrators to manage complaint statuses through a secure dashboard. It also supports user authentication, complaint tracking, and Excel/PDF report generation.
-
+          A full-stack complaint management system developed using Python,
+          Django, SQLite, HTML, CSS, and JavaScript. The application enables
+          users to register and track complaints while allowing administrators
+          to manage complaint statuses through a secure dashboard. It also
+          supports user authentication, complaint tracking, and Excel/PDF report
+          generation.
         </p>
 
         <div className="flex gap-3 mb-5 flex-wrap">
-
           <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
             Django
           </span>
@@ -329,49 +298,24 @@ function App() {
           <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">
             SQLite
           </span>
-
         </div>
 
-        
-
-  <div className="flex gap-4">
-
-  <button
-    onClick={() =>
-      window.open(
-        "https://punita.pythonanywhere.com",
-        "_blank"
-      )
-    }
-    className="flex-1 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition"
-  >
-    Live Demo
-  </button>
-
-  <button
-    onClick={() =>
-      window.open(
-        "https://github.com/PunitaGera/online-complaint-management-system",
-        "_blank"
-      )
-    }
-    className="flex-1 border border-blue-600 text-blue-600 px-5 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition"
-  >
-    GitHub
-  </button>
-
-</div>
-
-</div>
-
+        <div className="flex">
+          <button
+            onClick={() =>
+              window.open(
+                "https://github.com/PunitaGera/online-complaint-management-system",
+                "_blank"
+              )
+            }
+            className="w-full border border-blue-600 text-blue-600 px-5 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition text-center"
+          >
+            View Source Code on GitHub
+          </button>
         </div>
-
       </div>
-
     </div>
-
   </div>
-
 </section>
 
 <section id="education" className="py-20 bg-gray-100 px-6">
